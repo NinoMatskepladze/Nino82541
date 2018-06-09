@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            text-align: center;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+            <tr>
+                    <th><b>Control Type</b></th>
+                    <th><b>Data</b></th>
+                    <th><b>Control</b></th>
+            </tr>
+            <tr>
+                    <td>Text Box</td>
+                    <td>Name:</td>
+                    <td>
+                            <form action="/register" method="GET">
+                            <input type="text" name="Name" placeholder="Enter Name"maxlength="35">
+                            </form>
+                    </td>
+            </tr>
+            <tr>
+                    <td>Password</td>
+                    <td>Password:</td>
+                    <td>
+                            <form action="" method="POST">
+                            <input type="password" name="Password" id="password">
+                    </td>
+            </tr>
+            <tr>
+                    <td>Text Area</td>
+                    <td>Address:</td>
+                    <td>
+                            <textarea placeholder="Enter Address" rows="5" cols="22" style="resize: vertical;"></textarea>
+                    </td>
+            </tr>
+            <tr>
+                    <td>Drop Down List</td>
+                    <td>Area:</td>
+                    <td>
+                            <select name="Area" id="Area" >
+                                    <option value="Center">Center</option>
+                                    <option value="Right Side">Right Side</option>
+                                    <option value="Left Side">Left Side</option> 
+                            </select>                                 
+                    </td>
+            </tr>
+            <tr>
+                    <td>Check Box</td>
+                    <td>Hobbies:</td>
+                    <td>
+                              <input type="checkbox" name="Sport" value="Sport" width="20px">Sport  
+                              <br>
+                              <input type="checkbox" name="Reading" value="Reading" width="20px">Reading
+                              <br>
+                              <input type="checkbox" name="T.V." value="T.V." width="20px">T.V.   
+                              <br>
+                              <input type="checkbox" name="Internet" value="Internet" width="20px">Internet
+                              <br>
+                    </td>
+            </tr>
+            <tr>
+                    <td>Radio Buttons</td>
+                    <td>Gender:</td>
+                    <td>
+                            <fieldset>
+                                    <legend>Gender Selection</legend>
+                                    <input type="radio" name="gender" value="male">Male
+                                    <br>
+                                    <input type="radio" name="gender" value="female">Female
+                               </fieldset> 
+                    </td>
+            </tr>
+            <tr>
+                    <td>File Upload</td>
+                    <td>Your Image:</td>
+                    <td>
+                            <button type="upload">Choose File</button>
+                            No File Chosen
+                    </td>
+            </tr>
+            <tr>
+                    <td>Buttons</td>
+                    <td>Actions:</td>
+                    <td>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                            <button type="button" onclick="alert(Button)">Button</button>
+                    </td>
+            </tr>
+
+    </table>
+    
+</body>
+</html>
