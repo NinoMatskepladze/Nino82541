@@ -1,0 +1,230 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+header, footer, article, .leftSide {
+    border: 3px solid whitesmoke;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.25em;
+}
+header, footer {
+    font-size: 20px;
+    text-align: center;
+    height: 50px;
+    background-color: #f6b93b;
+}
+html, body, .wrapper {
+    margin: 0;
+    width: 100%;
+    font-family: 'Comic Sans MS';
+    background-color: #3c6382;
+    color: #444;
+    display: flex;
+}
+header {
+    width: 100%;
+}
+.footer{
+    align-self: flex-end;
+    width: 100%;
+}
+.vbox {
+    display: flex;
+    flex-flow: row wrap;
+}
+.hbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start; 
+}
+
+/* Statistics style */
+.leftSide{
+    border: 1px solid whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ea8685;
+    min-width: 30%;
+}
+ul li {
+    list-style: none;
+}
+
+/* Students' info style */
+.block1{
+    /* text-align: left; */
+    /* flex-direction: column; */
+}
+.block2{
+    /* text-align: center; */
+    /* flex-direction: column;  */
+}
+.block1-a, .block1-b, .block1-c, .block1-d{
+    width: 200px;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+.block2-a, .block2-b, .block2-c, .block2-d{
+    margin-top: 35px;
+    margin-right: 10px;
+}
+.studTable {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70%;
+    min-height: 600px;
+    margin-left: 20px;
+    /* display: flex;
+    flex-flow: row wrap; */
+    /* justify-content: flex-start;
+    align-content: center; */
+}
+.column{
+    display: flex;
+    flex-flow: row nowrap;
+    /* float: left; */
+    margin-top:21px;
+    margin-right: 14px;
+    border: whitesmoke;
+}
+.nameCol{
+    flex-direction: column;
+}
+.avarageCol{
+    flex-direction: column;
+}
+.JD,
+.JD1, .JD2, .JD3, .JD4, .JD5,
+.JD6, .JD7, .JD8, .JD9, .JD10,
+.JD11, .JD12, .JD13, .JD14, .JD15{
+    text-align: center;
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    background-color: #95afc0;
+    margin-right: 5px;
+}
+
+
+/* Button style */
+.buttonsWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+.buttonsWrapper button {
+    margin-left: 10px;
+}
+button{
+    font-family: 'Courier';
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.addColumn{
+    background: #009432;
+}
+.deleteColumn{
+    background: #ED4C67
+}
+.refresh{
+    background: #D980FA;
+}
+button:hover {
+    color: grey;
+    background: #f6b93b;
+    border-color: #f6b93b; 
+    transition: all 0.4s ease 0s;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+.hbox {
+    flex-direction: column;
+}
+.leftSide, .studTable, footer {
+    width: 100%;
+}  
+}
+
+    
+.evalcol{
+  flex-direction: column;
+    width:inherit;
+
+}
+
+.day {
+  flex-direction: column;
+}
+.JD,
+.JD1, .JD2, .JD3, .JD4, .JD5,
+.JD6, .JD7, .JD8, .JD9, .JD10,
+.JD11, .JD12, .JD13, .JD14, .JD15,  .evalcolh3{
+    text-align: center;
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    background-color: #95afc0;
+    margin-right: 5px;
+}
+button{
+    font-family: 'Courier';
+    text-transform: uppercase;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.addColumn{
+    background: #009432;
+}
+.deleteColumn{
+    background: #ED4C67
+}
+.refresh{
+    background: #D980FA;
+}
+button:hover {
+    color: grey;
+    background: #f6b93b;
+    border-color: #f6b93b;
+    transition: all 0.4s ease 0s;
+}
+.evalcol {
+    width:80px !important;
+    margin-left: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+[class^="gradecol"]
+ {
+  height:21px;
+  width:inherit;
+  margin-top: 4px;
+  border:1px solid whitesmoke !important;
+  border-radius: 3px;
+  transition: 0.2s ease;
+  background: tomato;
+
+
+}
+[class^="gradecol"]:hover {
+  cursor:pointer;
+}
+[class^="gradecol"]:active {
+  box-shadow: 2px 2px 2px gray,-2px -2px 2px gray;
+  opacity: 0.8;
+  
+ }
+.evalcolh3 {margin-bottom:15px;
+  height:28px;
+  width: inherit;
+}
+.notempty{
+    background: green !important
+    
+    
+}
