@@ -1,0 +1,75 @@
+<html>
+<head>
+  <meta charset='utf-8' />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class='game'>
+      <canvas id='mycanvas'>
+      </canvas>
+    </div>
+
+    <div id="textAndButton">
+      <h1>Press start and eat the apple!</h1>
+      <button id='btn'>START</button>
+    </div>
+
+
+    <div id="allSimulations">
+      <h4 class="otions">Highest Score</h4>
+      <div id="highestScore" class="otions"></div>
+
+      <h4 class="otions">Game Level</h4>
+      <div id="gameLevel" class="otions"></div>
+    </div>
+    <br>
+
+    <div id="inputs">
+      <div id="inner-inputs">
+
+
+        <div>
+          <p>Board Width</p>
+          <input type="text" id="boardWidth" onkeyup="myWidth()">
+        </div>
+        <div>
+            <p>Board Height</p>
+          <input type="text" id="boardHeight" onkeyup="myHeight()">
+        </div>
+        <div>
+            <p>Length of snake</p>
+          <input type="text" id="snakeLength" onkeyup="myLength()">
+        </div>
+        <div>
+            <p>Numbers of Apples</p>
+          <input type="text" id="appleNumbers" onkeyup="myNumbers()">
+        </div>
+
+        <br>
+        <div id="speed">Speed Number</p>
+          <input type="text" id="speedNumber" onkeyup="mySpeed()">
+
+          <select name="levels" form="levelsForm" onchange="myLevel()" id="level">
+            <option value="doNotWork" disabled selected></option>
+            <option value="novice">Novice</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<script src="snakeClass.js"></script>
+<script src="appleClass.js"></script>
+<script src="drawModule.js"></script>
+<script src="inputs.js"></script>
+<script src="stats.js"></script>
+
+
+</body>
+
+</html>
